@@ -1,0 +1,57 @@
+@import url(fontiran.css);
+* {box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+    font-family: iranyekan  !important;}
+body{
+    background-image: url("img/back.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+.des{
+    
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    right: 25%;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+}
+form{
+position: relative;
+    
+left:23%;
+
+    text-align: center;
+    margin-top: 50px;
+    max-width: 70%;
+    padding: 0;
+}
+input{
+    position: absolute;
+
+
+    border: 3px solid #b00d1e;
+    border-radius: 40px;
+    outline: none;
+    transition:border 1s, background-color 1s;
+    height: 45px;
+    
+  
+}
+input:focus{
+    border: 3px solid #aaa;
+    background-color:#eee;
+}
+.formitem{
+    margin-top: 30px;
+}
+form p{
+    color: #fff;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+   

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    
+    <link rel="stylesheet" href="{% static 'css/indexcss.css' %}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    </head>
+<html>
+<body>
+<div class="container-fluid ">
+    <div class="row ">
+<h2 class="col-sm-6 des">پنل کروالر خبر آنلاین</h2>
+    </div>
+    <div class="row">
+<p  class="col-sm-6 des"> !وارد کردن تایخ ( روز و ماه و سال ) اختیاری است</p>
+    </div>
+  </div>
+  <div class="container-fluid">
+<div class="row">
+<form class="col-sm-8" action="{% url 'result' %}">
+  
+    <div class="formitem row">
+  <p class="col-sm-3 text">URL</p>
+  <input class="col-sm-4 url" type="text" id="fname" name="url">
+</div> 
+<div class="formitem row">
+  <p class="col-sm-3  text">تعداد صفحات</p>
+  <input  class="col-sm-4  number" type="text" id="lname" name="numofpages">
+</div>
+<div class="formitem row">
+ <p class="text col-sm-3  ">روز</p>
+  <input class="col-sm-4  day" type="text" id="lname" name="day">
+</div>
+<div class="formitem row">
+  <p class="text col-sm-3 ">ماه</p>
+  <input class="col-sm-4  month" type="text" id="lname" name="month">
+</div>
+<div class="formitem row">
+  <p class="text col-sm-3 ">سال</p>
+  <input  class="col-sm-4  year" type="text" id="lname" name="year">
+</div>
+<div class="formitem row">
+  <p class="text col-sm-3 "></p>
+  <input  class="col-sm-4  year" type="submit"  id="lname" value="getCrawler">
+</div>
+</form> 
+
+</div>
+</div>
+
+</body>
+</html>
